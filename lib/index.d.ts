@@ -5,7 +5,7 @@ This is for library users. Thus, properties and methods for internal use is omit
 export declare class Validator {
     constructor();
     customFormats: {[formatName: string]: CustomFormat};
-    schemas: {[id: string]: Schema};
+    schemas: {[$id: string]: Schema};
     unresolvedRefs: string[];
 
     attributes: {[property: string]: CustomProperty};
@@ -48,7 +48,7 @@ export declare class SchemaError extends Error{
 export declare function validate(instance: any, schema: any, options?: Options): ValidatorResult
 
 export interface Schema {
-    id?: string
+    $id?: string
     $schema?: string
     $ref?: string
     title?: string

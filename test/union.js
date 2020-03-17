@@ -19,10 +19,10 @@ describe('Union', function () {
 
     var objectIdSchema = {
       "type": "object",
-      "id": "MongoDb#ObjectId",
+      "$id": "MongoDb#ObjectId",
       "description": "MongoDB ObjectID",
       "properties": {
-        "id": {"type": "string"},
+        "$id": {"type": "string"},
         "_bsontype": {"type": "string"}
       }
     };
